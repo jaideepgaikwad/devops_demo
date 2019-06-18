@@ -18,6 +18,20 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+    <repositories>
+	    <repository>
+		    <id>siemens-mvn-intra</id>
+		    <url>https://192.168.237.1:8443/repository/siemens-intra-repo/</url>
+	    </repository>
+    </repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>siemens-hosted</id>
+			<url>http://192.168.237.1:8081/repository/siemensmvnhosted/</url>
+		</repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

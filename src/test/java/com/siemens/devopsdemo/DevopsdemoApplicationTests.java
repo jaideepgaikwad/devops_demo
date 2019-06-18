@@ -4,6 +4,7 @@ import com.siemens.devopsdemo.service.MyService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -11,13 +12,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class DevopsdemoApplicationTests {
 
+	@Autowired
+	MyService myService;
+
 	@Test
 	public void contextLoads() {
+		new DevopsdemoApplication();
 	}
 
 	@Test
 	public void testMyService(){
-		MyService myService = new MyService();
 		Assert.assertEquals(2, myService.addNumber(1,1));
 	}
 }

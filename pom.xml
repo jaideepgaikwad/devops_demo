@@ -28,7 +28,7 @@
 	<distributionManagement>
 		<repository>
 			<id>siemens-hosted</id>
-			<url>http://192.168.237.1:8081/repository/siemensmvnhosted/</url>
+			<url>https://example:8443/repository/siemensmvnhosted/</url>
 		</repository>
 	</distributionManagement>
 
